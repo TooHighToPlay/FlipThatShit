@@ -1,0 +1,10 @@
+-if @open_game
+  -content_for :head do
+    %link{rel:"image_src", href:absolute_image_path('fb_share.jpg')}
+    %meta{property:"og:site_name", content: "Spin That Shit!"}
+    %meta{property:"og:title", content:"#{@open_game.name} spun that shit!"}
+    %meta{property:"og:description", content:"#{@open_game.spins} wins in a row! Beat that!"}
+    %meta{property:"og:image", content: absolute_image_path('fb_share.jpg')}
+    %meta{property:"og:url", content:game_path(@open_game)}
+.container{"data-ng-view"=>true, "data-ng-init"=>"data.highscores = #{@highscores.to_json}"}
+  

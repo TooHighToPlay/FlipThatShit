@@ -12,9 +12,17 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require angular
+//= require angular-route
 // Note: Foundation 5 won't work with turbolinks
 //= require foundation
+//= require pastry_utils
 //= require_tree .
+//= require angular-rails-templates
+//= require angular-cookies
+//= require angular-sanitize
+//= require angularLocalStorage
+
 $(function() {
   $(document).foundation();
 });
