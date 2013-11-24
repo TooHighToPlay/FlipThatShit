@@ -1,4 +1,4 @@
-@SpinCtrl = ($scope, $http, storage) ->
+@SpinCtrl = ['$scope', '$http', 'storage', ($scope, $http, storage) ->
 
   class CoinAnimator
     constructor: () ->
@@ -126,3 +126,4 @@
     sharer = new Sharer($scope.data.highscoreGameId)
     sharer.shareFacebook()
     return false
+]
