@@ -10,6 +10,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'figaro', '~> 0.7.0'
 gem 'foundation-rails', '~> 5.0.2.0'
 gem 'haml-rails', '~> 0.4'
+gem 'modernizr-rails'
 gem 'therubyracer', :platform=>:ruby
 gem 'thin'
 
